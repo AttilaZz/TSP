@@ -10,8 +10,16 @@
 */
 package com.udev;
 
+import com.udev.algo.BruteForce;
+import com.udev.struct.Country;
+
 public class App {
 	public static void main(String[] args) {
 		
+		Country c = new Country();
+		BruteForce bf = new BruteForce(c);
+		bf.bruteForce(c);
+		bf.displayCost();
+		bf.displayPath();
 	}
 }

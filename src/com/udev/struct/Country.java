@@ -3,7 +3,7 @@
 *
 * the class that defines a country.
 *
-* @package com.udev.struct.
+* @package com.udev.struct
 * @author Sebaa Amar <amarsebaa@gmail.com>.
 * @license None.
 * @link Project Link.
@@ -13,7 +13,9 @@ package com.udev.struct;
 
 public class Country {
 	
-	private int citiesCount = 4;
+	//the number of generated cities 
+	public int citiesCount = 4;
+	//the list of all the generated cities
 	private City citiesList[] = new City[citiesCount];
 	
 	//Constructor
@@ -23,11 +25,11 @@ public class Country {
 		}
 	}
 	
-	private City[] getCitiesList() {
+	public City[] getCitiesList() {
 		return citiesList;
 	}
 
-	private void setCitiesList(City citiesList[]) {
+	public void setCitiesList(City citiesList[]) {
 		this.citiesList = citiesList;
 	}
 	

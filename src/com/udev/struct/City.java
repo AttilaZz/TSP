@@ -3,7 +3,7 @@
 *
 * the class that defines a city.
 *
-* @package com.udev.struct.
+* @package com.udev.struct
 * @author Sebaa Amar <amarsebaa@gmail.com>.
 * @license None.
 * @link Project Link.
@@ -29,10 +29,12 @@ public class City {
 		positionX = rand.nextInt(panelX - 10 + 1) + 10;
 		positionY = rand.nextInt(panelY - 10 + 1) + 10;
 		visited = false;
+		
 	}
 
 	public int getPositionX() {
 		return positionX;
+		
 	}
 	
 	public void setPositionX(int positionX) {
